@@ -1,4 +1,4 @@
-$main-bg: #f5f5f5;
+$main-bg: #fdfdfd;
 $dark-bg: #222;
 $highlight: #FEDC56;
 
@@ -13,4 +13,16 @@ $highlight: #FEDC56;
 @font-face {
   font-family: 'Alexandria';
   src: url('../fonts/alexandria/AlexandriaFLF.ttf');
+}
+
+// $xl: 87.5em;
+$lg: 1024px; 
+// $med: 40em;
+// $sm: 28em; 
+// $xs: 20em; 
+
+@mixin responsive($query) {
+  @media ( min-width: + $query ) {
+      @content;
+  }
 }

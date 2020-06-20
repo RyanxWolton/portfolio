@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="176px" height="209px" viewBox="0 0 176 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>My logo</title>
+    <g id="page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path-3" stroke="#FEDC56" stroke-width="3" points="21 94.171875 28.6484375 94.171875 54.5878906 151.742188 77.8203125 145.158036 99.4678832 145.158036 121.587891 151.742188 148.101562 94.171875 155.175781 94.171875 155.175781 151.742188 112.894531 199.046875 88.1757813 206.800781 63.28125 199.046875 21 150.486328"></polygon>
+        <polygon id="Path-4" stroke="#FEDC56" stroke-width="3" points="21 55.75 7 37.8554687 18.2382813 26.6054687 24.7539063 10.8789062 40.3671875 2 61.5078125 10.8789062 72.3320313 2 91.4804688 16.1992188 100.320313 10.8789062 126.4375 2 140.601563 10.8789062 160.773438 16.1992188 168.839844 37.8554687 152.414063 47.03125 140.601563 55.75 118.738281 47.03125 100.320312 47.03125 85.2382813 55.75 72.3320313 55.75 61.5078125 47.03125 40.3671875 64.125"></polygon>
+        <path d="" id="Path-6" stroke="#979797"></path>
+        <circle id="Oval" stroke="#FEDC50" stroke-width="3" cx="168.5" cy="99.5" r="5.5"></circle>
+        <circle id="Oval" stroke="#FEDC50" stroke-width="3" cx="7.5" cy="99.5" r="5.5"></circle>
+    </g>
+</svg>

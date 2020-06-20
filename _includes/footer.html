@@ -1,11 +1,13 @@
 <footer>
   <div id="contactForm">
+    <img src="/assets/images/MyLogoYellow.svg" id="backgroundLogo"/>
     <h1>enquire</h1>
-    <form>
-      <input class="form-input" placeholder="Name"/>
-      <input class="form-input" placeholder="Email"/>
-      <textarea class="form-input" placeholder="Say a few words.."></textarea>
-      <button class="form-input"><i class="far fa-paper-plane fa-2x"></i></button>
+    <form action="https://getsimpleform.com/messages?form_api_token=085d9ceefca8fe7cf2657a289da1a6ab" method="POST">
+      <input type='hidden' name='redirect_to' value='http://127.0.0.1:4000//message_confirm.html' />
+      <input class="form-input" placeholder="Name" name="name"/>
+      <input class="form-input" placeholder="Email" name="email"/>
+      <textarea class="form-input" placeholder="What would you like to discuss?" name="message" rows="8"></textarea>
+      <button type="submit" class="form-input"><i class="far fa-paper-plane fa-2x"></i></button>
     </form>
   </div>
 </footer>

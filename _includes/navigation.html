@@ -7,13 +7,29 @@
     <span></span>
     <span></span>
     <ul id="navMenu">
-      <img src="../assets/images/me_side.jpg" id="me"/>
-      <h1>Ryan Wolton</h1> 
-      {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>
-          <li>{{ item.name }}</li>
-        </a>
-      {% endfor %}
+      <div>
+        <img src="/assets/images/MyLogoYellow.svg" id="navLogo"/>
+        <h1 class="name">Ryan Wolton</h1>
+        <div id="navLinks">
+          {% for item in site.data.navigation %}
+          <a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>
+            <li>{{ item.name }}</li>
+          </a>
+          {% endfor %}
+          <div id="contactNav">
+            <li>Contact</li>
+          </div>
+        </div>
+      </div> 
+      <div id="socialLinks">
+        <div>
+          {% for item in site.data.socials %}
+            <a href="{{ item.link }}" target="_blank">
+              <li><i class="fab fa-{{ item.icon }}"></i></li>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
     </ul>
   </div>
 </nav>

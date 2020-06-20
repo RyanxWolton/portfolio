@@ -1,0 +1,16 @@
+---
+title: Portfolio
+---
+<h1>My Work</h1>
+
+
+  {% for work in site.works %}
+    <img src="{{ work.image | asset_path }}" class="responsive-image" />
+    <h2><a class="" href="{{ work.url }}">{{ work.company }} <i class="fas fa-chevron-right"></i></a></h2>
+    <ul class="tags">
+      {% for item in work.tags %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <p>{{ work.excerpt }}</p>
+  {% endfor %}

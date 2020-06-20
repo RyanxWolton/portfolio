@@ -1,6 +1,6 @@
-- name: Home
+- name: About
   link: /
 - name: Portfolio
-  link: /portfoliio.html
+  link: /portfolio.html
 - name: Blog
   link: /blog.html

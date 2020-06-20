@@ -1,7 +1,7 @@
 @import 'theme';
 
 #navToggle {
-
+  position: fixed;
   padding: 50px;
   z-index: 1;
   color: $highlight;
@@ -42,6 +42,9 @@
             transform: none;
           }
         }
+        @include responsive( $lg ) {
+          display: none;
+        }
     }
     span {
       display: block;
@@ -49,7 +52,7 @@
       height: 10px;
       margin-bottom: 10px;
       position: relative;
-      background: $dark-bg;
+      background: $highlight;
       border-radius: 5px;
       z-index: 1;
       transform-origin: 4px 0px;
@@ -62,39 +65,78 @@
         &:nth-child(4) {
           transform-origin: 0% 100%;
         }
+        @include responsive( $lg ) {
+          display: none;
+        }
     }
     a {
-      text-decoration: none;
-      color: $highlight;
-      transition: color 0.3s ease;
+      color: $main-bg;
+    }
+    #navLinks {
+      div {
+        color: $main-bg;
+        cursor: pointer;
+        justify-self: right;
+        font-family: 'EliteDanger';
+      }
+      .current {
+        color: $highlight;
+      }
+    }
+    #socialLinks {
+      display: flex;
+      justify-content: flex-end;
+      padding-bottom: 1em;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 }
 #navMenu
 {
+  @include responsive( $lg ) {
+    transform: none;
+    padding-top: inherit;
+    margin: 0;
+    left: 0;
+    width: 233px;
+    height: calc(100% - 50px)
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
-  height: 100%;
+  height: calc(100% - 200px);
   width: 300px;
   margin: -50px 0 0 -50px;
-  padding: 50px;
-  padding-top: 200px;
+  padding: 30px;
+  padding-top: 250px;
   background: $dark-bg;
-  list-style-type: none;
-  font-family: 'EliteDanger';
-  -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
+  -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    li {
-      padding: 10px 0;
-      font-size: 5rem;
-    }
+  text-align: right;
 }
 
-#me {
-  border-radius: 75px; 
-  border: 2px solid $highlight;
-  width: 100%;
+#navLogo {
+  display: none;
+  @include responsive( $lg ) {
+    display: inline-block;
+    width: 30%;
+  }
+}
+
+#mobileHeader {
+  width: 100%; 
+  position: fixed; 
+  background-color: $dark-bg; 
+  height: 150px;
+  @include responsive($lg) {
+    display: none;
+  }
 }
